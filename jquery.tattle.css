@@ -1,0 +1,55 @@
+#tattle_container {
+    width: 400px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    margin: 0 0 0 -200px;
+    padding: 0;
+
+}
+.tattle_message {
+    border-radius: 4px;
+    padding: 6px 36px 9px 36px;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    color: #A68510;
+       -moz-box-shadow: 0 11px 50px #666;
+    -webkit-box-shadow: 0 11px 50px #666;
+            box-shadow: 0 5px 50px #666;
+    position: relative;
+    margin-bottom: 6px;
+    color: white;
+    border: 4px solid #3b8eb5;
+    background-color: #56aacf;
+     
+}
+.tattle_message.success {
+    background-color: #77a66b;
+    border-color: #5c8651;
+}
+.tattle_message.error {
+    background-color: #cb4646;
+    border-color: #a73030;
+}
+.tattle_close {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 24px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 32px;
+    opacity: 0.8;
+    font-family: EntypoRegular;
+    display: none;
+}
+.tattle_close:before {
+    content: '['; 
+}
+.tattle_message:hover {
+    cursor: pointer;
+}
+.tattle_message:hover .tattle_close {
+    display: inline-block;
+}
